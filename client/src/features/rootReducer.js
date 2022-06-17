@@ -18,10 +18,10 @@ const rootSlice = createSlice({
         deleteCart: (state, action) => {
             state.cartItems = state.cartItems.filter(item => item._id !== action.payload._id)
         },
-        showLoading: (state, action) => {
+        showLoading: (state) => {
             state.loading = true
         },
-        hideLoading: (state, action) => {
+        hideLoading: (state) => {
             state.loading = false
         }
     }

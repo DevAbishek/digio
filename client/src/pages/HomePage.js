@@ -4,7 +4,7 @@ import axios from 'axios'
 import { Row, Col } from 'antd';
 import ItemList from '../components/ItemList';
 import { useDispatch } from 'react-redux';
-import { hideLoading } from '../features/rootReducer';
+import { hideLoading, showLoading } from '../features/rootReducer';
 
 const HomePage = () => {
 
@@ -15,15 +15,16 @@ const HomePage = () => {
     useEffect(() => {
         const getAllItems = async () => {
             try {
+                dispatch(showLoading())
                 const { data } = await axios.get(`${url}api/items/get-item`)
                 setItemsData(data)
-                dispatch(hideLoading)
+                dispatch(hideLoading())
             } catch (error) {
                 console.log(error)
             }
         }
         getAllItems()
-    }, [])
+    }, [dispatch])
 
     return (
         <>
