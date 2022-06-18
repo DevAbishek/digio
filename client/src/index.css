@@ -31,3 +31,26 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.category {
+  border: 2px solid gray;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category h4 {
+  margin: 0;
+}
+
+.category img {
+  margin-left: 10px;
+}
+
+.category-active {
+  border: 2px solid green;
+  background-color: gray;
+}
