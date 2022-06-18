@@ -17,7 +17,7 @@ import Spinner from './Spinner';
 
 const { Header, Sider, Content } = Layout;
 
-const App = ({children}) => {
+const App = ({ children }) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const cartItems = useSelector(state => state.root.cartItems)
@@ -52,7 +52,14 @@ const App = ({children}) => {
                     <Menu.Item key="/customers" icon={<UserOutlined />}>
                         <Link to="/customers">Customers</Link>
                     </Menu.Item>
-                    <Menu.Item key="/logout" icon={<LogoutOutlined />}>
+                    <Menu.Item
+                        key="/logout"
+                        icon={<LogoutOutlined />}
+                        onClick={() => {
+                            localStorage.removeItem("auth")
+                            navigate('/login')
+                        }}
+                    >
                         Logout
                     </Menu.Item>
                 </Menu>

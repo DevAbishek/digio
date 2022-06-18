@@ -6,6 +6,8 @@ const dotenv = require('dotenv')
 
 const connectDb = require('./config/config');
 const itemRoutes = require('./routes/itemRoutes')
+const userRoutes = require('./routes/userRoutes')
+const billRoutes = require('./routes/billRoutes')
 
 dotenv.config();
 connectDb();
@@ -22,6 +24,9 @@ app.use(morgan('dev'))
 
 //routes
 app.use('/api/items', itemRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/bills', billRoutes)
+
 
 //PORT
 const PORT = process.env.PORT;

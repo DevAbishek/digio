@@ -5,7 +5,7 @@ const getItemController = async (req, res) => {
         const items = await itemModel.find();
         res.status(200).send(items)
     } catch (error) {
-
+        res.status(400).send(error)
     }
 }
 
