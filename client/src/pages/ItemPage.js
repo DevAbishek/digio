@@ -10,9 +10,9 @@ import { Button, Form, Modal, Select, Table, Input, message } from "antd";
 
 const ItemPage = () => {
 
+    const url = 'http://localhost:8080/';
     const dispatch = useDispatch();
     const [itemsData, setItemsData] = useState([]);
-    const url = 'http://localhost:8080/';
     const [popupModal, setPopupModal] = useState(false)
     const [editItem, setEditItem] = useState(null)
 

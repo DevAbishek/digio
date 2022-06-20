@@ -5,11 +5,12 @@ import axios from 'axios';
 
 const LoginPage = () => {
 
+    const url = 'http://localhost:8080/';
     const navigate = useNavigate();
 
     const handleSubmit = async (value) => {
         try {
-            const res = await axios.post(`http://localhost:8080/api/users/login`, value)
+            const res = await axios.post(`${url}api/users/login`, value)
             console.log(res)
             message.success("User Logged In Successfully")
             localStorage.setItem('auth', JSON.stringify(res.data))

@@ -8,6 +8,7 @@ import { hideLoading, showLoading } from '../features/rootReducer';
 
 const HomePage = () => {
 
+    const url = 'http://localhost:8080/';
     const dispatch = useDispatch();
     const [itemsData, setItemsData] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('Drinks')
@@ -26,7 +27,6 @@ const HomePage = () => {
             imageUrl: 'https://cdn-icons-png.flaticon.com/512/1471/1471262.png'
         }
     ]
-    const url = 'http://localhost:8080/';
 
     useEffect(() => {
         const getAllItems = async () => {
