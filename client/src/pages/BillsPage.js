@@ -11,8 +11,8 @@ import "../styles/InvoiceStyles.css"
 
 const BillsPage = () => {
 
+    const url = 'https://digio-pos.herokuapp.com/';
     const dispatch = useDispatch();
-    const url = 'http://localhost:8080/';
     const componentRef = useRef()
 
     const [billsData, setBillsData] = useState([]);

@@ -9,9 +9,9 @@ import { Table } from "antd";
 
 const CustomerPage = () => {
 
+  const url = 'https://digio-pos.herokuapp.com/';
   const dispatch = useDispatch();
   const [billsData, setBillsData] = useState([]);
-  const url = 'http://localhost:8080/';
 
 
   const getAllBills = async () => {

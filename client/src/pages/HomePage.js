@@ -8,7 +8,7 @@ import { hideLoading, showLoading } from '../features/rootReducer';
 
 const HomePage = () => {
 
-    const url = 'http://localhost:8080/';
+    const url = 'https://digio-pos.herokuapp.com/';
     const dispatch = useDispatch();
     const [itemsData, setItemsData] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('Drinks')

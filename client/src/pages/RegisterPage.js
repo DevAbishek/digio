@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const RegisterPage = () => {
 
-    const url = 'http://localhost:8080/';
+    const url = 'https://digio-pos.herokuapp.com/';
     const navigate = useNavigate();
 
     const handleSubmit = async (value) => {

@@ -10,7 +10,7 @@ import { Button, Form, Modal, Select, Table, Input, message } from "antd";
 
 const ItemPage = () => {
 
-    const url = 'http://localhost:8080/';
+    const url = 'https://digio-pos.herokuapp.com/';
     const dispatch = useDispatch();
     const [itemsData, setItemsData] = useState([]);
     const [popupModal, setPopupModal] = useState(false)
