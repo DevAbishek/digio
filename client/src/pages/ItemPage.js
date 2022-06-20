@@ -123,9 +123,9 @@ const ItemPage = () => {
                                 </Form.Item>
                                 <Form.Item name="category" label="Category">
                                     <Select>
-                                        <Select.Option value="drinks">Drinks</Select.Option>
-                                        <Select.Option value="rice">Rice</Select.Option>
-                                        <Select.Option value="noodles">Noodles</Select.Option>
+                                        <Select.Option value="Drinks">Drinks</Select.Option>
+                                        <Select.Option value="Rice Bowls">Rice Bowls</Select.Option>
+                                        <Select.Option value="Noodles">Noodles</Select.Option>
                                     </Select>
                                 </Form.Item>
                                 <div className="d-flex justify-content-end">

@@ -45,7 +45,7 @@ const ItemList = ({ item }) => {
         }}
         cover={<img alt={item.name} src={item.image} style={{ height: 250 }} />}
       >
-        <Meta title={item.name} />
+        <Meta title={item.name} style={{display: "block", textAlign: "center"}} />
         <div className='item-button'>
           <Button onClick={() => handleButton()}>Add to cart</Button>
         </div>

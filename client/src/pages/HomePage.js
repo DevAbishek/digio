@@ -10,20 +10,20 @@ const HomePage = () => {
 
     const dispatch = useDispatch();
     const [itemsData, setItemsData] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState('drinks')
+    const [selectedCategory, setSelectedCategory] = useState('Drinks')
     const categories = [
         {
-            name: 'drink',
+            name: 'Drinks',
             imageUrl: 'https://cdn-icons-png.flaticon.com/512/4329/4329542.png'
         },
         {
-            name: 'rice',
-            imageUrl: 'https://cdn-icons.flaticon.com/png/512/1531/premium/1531334.png?token=exp=1655537840~hmac=129635315c351b9ceaeb730d0bc8cfc8'
+            name: 'Rice Bowls',
+            imageUrl: 'https://cdn-icons-png.flaticon.com/512/641/641850.png'
 
         },
         {
-            name: 'noodles',
-            imageUrl: 'https://cdn-icons.flaticon.com/png/512/3041/premium/3041130.png?token=exp=1655537885~hmac=6d6346e7f346257ca80c5d0528e6f935'
+            name: 'Noodles',
+            imageUrl: 'https://cdn-icons-png.flaticon.com/512/1471/1471262.png'
         }
     ]
     const url = 'http://localhost:8080/';

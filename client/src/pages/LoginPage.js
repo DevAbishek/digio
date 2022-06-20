@@ -11,12 +11,12 @@ const LoginPage = () => {
         try {
             const res = await axios.post(`http://localhost:8080/api/users/login`, value)
             console.log(res)
-            message.success("user login successfully")
+            message.success("User Logged In Successfully")
             localStorage.setItem('auth', JSON.stringify(res.data))
             navigate('/')
         } catch (error) {
             console.log(error)
-            message.error('Something went wrong')
+            message.error('Something Went Wrong')
         }
 
     }

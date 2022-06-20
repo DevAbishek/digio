@@ -10,11 +10,11 @@ const RegisterPage = () => {
     const handleSubmit = async (value) => {
         try {
             const res = await axios.post(`http://localhost:8080/api/users/register`, value)
-            message.success("user added successfully")
+            message.success("User Added Successfully")
             navigate('/login')
         } catch (error) {
             console.log(error)
-            message.error('Something went wrong')
+            message.error('Something Went Wrong')
         }
 
     }

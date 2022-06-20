@@ -26,11 +26,15 @@
 
   .ant-layout.ant-layout-has-sider {
     height: 100vh;
+    padding: 0 !important;
   }
   
   .ant-layout-sider {
-    border-radius: 10px !important;
     padding-top: 10px !important;
+  }
+
+  .ant-layout {
+    background-color: #fff;
   }
   
   .anticon svg {

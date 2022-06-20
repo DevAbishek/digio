@@ -33,7 +33,7 @@ const App = ({ children }) => {
             {loading && <Spinner />}
             <Sider trigger={null} collapsible collapsed={collapsed}>
                 <div className="logo">
-                    <h1 className='text-light text-center font-weight-bold mt-4'>POS</h1>
+                    <h1 className='text-light text-center font-weight-bold mt-4'>Digio</h1>
                 </div>
                 <Menu
                     theme="dark"
