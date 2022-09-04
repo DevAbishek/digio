@@ -77,7 +77,7 @@ const CartPage = () => {
                 cartItems: cartItems
             }
             // console.log(newObject)
-            await axios.post('http://localhost:8080/api/bills/add-bill', newBill)
+            await axios.post('https://digio.onrender.com/api/bills/add-bill', newBill)
             message.success("Bill Generated")
             // navigate('/bills')
 

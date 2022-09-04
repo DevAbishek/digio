@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const LoginPage = () => {
 
-    const url = 'https://digio-pos.herokuapp.com/';
+    const url = 'https://digio.onrender.com/';
     const navigate = useNavigate();
 
     const handleSubmit = async (value) => {

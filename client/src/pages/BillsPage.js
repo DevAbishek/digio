@@ -11,7 +11,7 @@ import "../styles/InvoiceStyles.css"
 
 const BillsPage = () => {
 
-    const url = 'https://digio-pos.herokuapp.com/';
+    const url = 'https://digio.onrender.com/';
     const dispatch = useDispatch();
     const componentRef = useRef()
 
